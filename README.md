@@ -13,9 +13,24 @@ small/large are model roles in an offline teaching example.
 
 ## 1. Run your first example
 
-You need **Python 3.10 or newer**. Download and extract the repository if you
-have a ZIP. Open a terminal in the folder containing this README and
-[start.py](start.py), rather than inside routing_workshop/.
+### Set up a local copy
+
+Open a terminal in the parent folder where you want to keep the workshop.
+Check that Git is installed, then clone the repository and enter the new folder:
+
+~~~sh
+git --version
+git clone https://github.com/bvetsa/HackUMass_ModelRoutingWorkshop.git
+cd HackUMass_ModelRoutingWorkshop
+~~~
+
+If you're using GitHub's **Code → Download ZIP** option, extract the ZIP and
+open a terminal in the extracted folder containing `README.md` and `start.py`.
+
+### Run the starter
+
+Use **Python 3.10 or newer**. Run the commands below from the repository root,
+where [start.py](start.py) is located.
 
 On macOS/Linux:
 
