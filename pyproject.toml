@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hackumass-routing-workshop"
+version = "1.0.0"
+description = "An honest, dependency-free offline model-routing workshop"
+requires-python = ">=3.10"
+dependencies = []
+license = {text = "MIT (code); CC BY 4.0 public replay data"}
+
+[project.scripts]
+routing-workshop = "routing_workshop.__main__:main"
+
+[tool.setuptools.package-data]
+routing_workshop = ["data/*.json"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.packages.find]
+include = ["routing_workshop*"]

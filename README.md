@@ -9,6 +9,8 @@ inside this repository. You do not need the slides, a presenter, an API key,
 a GPU, a model download or a paid service. This program does not run an LLM:
 small/large are model roles in an offline teaching example.
 
+> **Public workshop edition.** Run the synthetic benchmark and threshold exercise offline. The historical replay fixture files are omitted. Treat replay instructions in the handouts as background and skip the recorded-mode and verify commands.
+
 ## 1. Run your first example
 
 You need **Python 3.10 or newer**. Download and extract the repository if you
@@ -76,7 +78,7 @@ routing_workshop/
   backends.py              Simulate outcomes or replay historical text
   benchmark.py             Compare policies; read after the basics
   __main__.py              Optional terminal-command interface
-  data/                    All training examples and recorded data
+  data/                    Synthetic cases and replay provenance
 scripts/                   Runnable lessons and experiments
 docs/                      Walkthrough, exercises and deeper explanations
 handouts/                  Printable and editable workshop sheets
@@ -91,20 +93,14 @@ copy of the examples. __init__.py files mark/import Python packages.
 
 ~~~sh
 python3 -m unittest discover -s tests -v
-python3 -m routing_workshop verify
 python3 -m routing_workshop route "Prove it." --policy local
 python3 -m routing_workshop benchmark --mode synthetic --out results/synthetic
-python3 -m routing_workshop benchmark --mode recorded --out results/recorded
 ~~~
 
 Reports are created in results/ in this repository. Open console.txt for a
 readable table or requests.csv to inspect individual questions.
 
-**Two different evidence modes:** synthetic mode uses designed PASS/FAIL
-outcomes, not measured LLM quality. Recorded mode replays 24 historical
-response pairs and scores human preference, not correctness. In both modes,
-service time and cost units are assumptions; local router/dispatch overhead
-is measured. No live API adapter is included.
+**Evidence in this checkout.** The benchmark uses designed synthetic PASS/FAIL outcomes. Service time and cost units are assumptions. Router and dispatch overhead are measured locally. The historical replay design is described in the benchmarking guide.
 
 ## If something goes wrong
 
@@ -113,7 +109,6 @@ is measured. No live API adapter is included.
 | Python command not found | Try the other command above; otherwise install Python 3.10+ first |
 | Python version below 3.10 | Use a newer Python before continuing |
 | Cannot open start.py / module not found | Open the terminal beside start.py and this README |
-| Replay rejects a custom prompt | Expected: replay knows exact bundled prompts only; use start.py or the route command for arbitrary routing |
 | No answer appears after routing | Expected: choosing a role and generating an answer are separate steps |
 
 More material: [handouts](handouts/), [integration guide](docs/INTEGRATION.md),

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "dataset": "lmsys/mt_bench_human_judgments",
+  "revision": "f7d2896d2cc5d80f8b55c2bbc722613555233c25",
+  "license": "CC BY 4.0",
+  "source_url": "https://huggingface.co/datasets/lmsys/mt_bench_human_judgments",
+  "upstream_file": "data/human-00000-of-00001-25f4910818759289.parquet",
+  "upstream_sha256": "4877bc46a40929f4082c3c79593700fb897b1d6c7f4c473032694a01322f5769",
+  "files": {
+    "recorded_source_rows.json": "69e8a07a750d5acee2b1c482210a8f8bcb029ad76fa975c7c0d64893cea972bb",
+    "recorded_responses.json": "92eb6838d87dd5ed55454a12a526bfc3aedbac6dbfe30a43243ad32d9bb7cf17"
+  },
+  "question_ids": [
+    82,
+    83,
+    85,
+    91,
+    92,
+    93,
+    101,
+    102,
+    103,
+    111,
+    112,
+    113,
+    121,
+    122,
+    123,
+    131,
+    133,
+    134,
+    141,
+    142,
+    143,
+    152,
+    153,
+    156
+  ],
+  "selection": "First three available first-turn GPT-3.5/GPT-4 question pairs in each ten-question ID block, 81-160. Convenience sample, no performance selection.",
+  "verification": "Fixture prompt, exact response strings, model identity, source indices and normalized human vote rows checked against bundled selected source rows. No independent recreation of historical inference or human judgments.",
+  "caveat": "Historical public responses and human preference votes. Service latency and cost are hypothetical. No live API calls. Repeated votes are correlated."
+}

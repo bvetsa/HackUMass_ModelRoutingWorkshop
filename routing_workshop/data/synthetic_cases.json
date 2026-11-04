@@ -1,0 +1,562 @@
+[
+  {
+    "id": "extract-00",
+    "prompt": "Extract the email from Contact: ada@example.org.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-01",
+    "prompt": "Find the city in this address: 7 Main St, Boston, MA.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-02",
+    "prompt": "Return the order number from Order #A142 shipped today.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-03",
+    "prompt": "Extract the date from Meeting scheduled for 2030-04-03.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-04",
+    "prompt": "Find the phone number in Call 555-0101 tomorrow.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-05",
+    "prompt": "Return the name from Name: Morgan, Role: designer.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-06",
+    "prompt": "Extract the zip code from Amherst MA 01002.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-07",
+    "prompt": "Find the URL in Visit https://example.org for details.",
+    "split": "train",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-08",
+    "prompt": "Return the integer from Count = 17.",
+    "split": "dev",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-09",
+    "prompt": "Extract the price from Total: $12.50.",
+    "split": "dev",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-10",
+    "prompt": "Find the color in color=green; size=large.",
+    "split": "dev",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-11",
+    "prompt": "Return the airport code from Flight BOS to SFO.",
+    "split": "test",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-12",
+    "prompt": "Extract the username from user: jules, active: yes.",
+    "split": "test",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-13",
+    "prompt": "Find the timestamp in Log: 09:30:10 started.",
+    "split": "test",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-14",
+    "prompt": "Return the ISBN from ISBN: 9780000000002.",
+    "split": "test",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-15",
+    "prompt": "Extract the animal from Pet: rabbit, Age: 2.",
+    "split": "test",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "extract-16",
+    "prompt": "Find the country in Country: Peru. Population: unknown.",
+    "split": "test",
+    "family": "extract",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-00",
+    "prompt": "Rewrite this politely: Send the file now.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-01",
+    "prompt": "Translate hello into Spanish.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-02",
+    "prompt": "Classify the sentiment: I loved the concert.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-03",
+    "prompt": "Format Alice, Bob, Chen as a JSON array.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-04",
+    "prompt": "Rewrite I cannot attend in a friendly tone.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-05",
+    "prompt": "Translate thank you into French.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-06",
+    "prompt": "Classify the sentiment: The food was terrible.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-07",
+    "prompt": "Format red blue green as a bullet list.",
+    "split": "train",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-08",
+    "prompt": "Rewrite this sentence in lowercase: HAPPY FRIDAY.",
+    "split": "dev",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-09",
+    "prompt": "Translate good morning into German.",
+    "split": "dev",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-10",
+    "prompt": "Classify the sentiment: The room was okay.",
+    "split": "dev",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-11",
+    "prompt": "Format 4 5 6 as a comma-separated list.",
+    "split": "test",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-12",
+    "prompt": "Rewrite this formally: Hey, got your note.",
+    "split": "test",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-13",
+    "prompt": "Translate goodbye into Italian.",
+    "split": "test",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-14",
+    "prompt": "Classify the sentiment: This is wonderful.",
+    "split": "test",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-15",
+    "prompt": "Format name Alex age 21 as JSON.",
+    "split": "test",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "rewrite-16",
+    "prompt": "Rewrite this title in sentence case: OUR NEXT EVENT.",
+    "split": "test",
+    "family": "rewrite",
+    "needs_large": false
+  },
+  {
+    "id": "reason-00",
+    "prompt": "Prove that the sum of two even integers is even.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-01",
+    "prompt": "Analyze a race condition between two concurrent writers.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-02",
+    "prompt": "Compare two database designs under strict consistency constraints.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-03",
+    "prompt": "Debug a deadlock caused by reversed lock ordering.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-04",
+    "prompt": "Derive the recurrence for binary search and justify its complexity.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-05",
+    "prompt": "Design a retry protocol that avoids duplicate payments.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-06",
+    "prompt": "Prove why a greedy interval scheduling algorithm is optimal.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-07",
+    "prompt": "Analyze why a distributed cache can return stale values.",
+    "split": "train",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-08",
+    "prompt": "Compare optimistic and pessimistic locking for conflicting updates.",
+    "split": "dev",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-09",
+    "prompt": "Debug a memory leak involving cyclic ownership in C++.",
+    "split": "dev",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-10",
+    "prompt": "Derive the probability of two collisions in a hash table.",
+    "split": "dev",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-11",
+    "prompt": "Design an experiment that distinguishes correlation from causation.",
+    "split": "test",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-12",
+    "prompt": "Prove that a tree with n vertices has n minus one edges.",
+    "split": "test",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-13",
+    "prompt": "Analyze a multi-step argument with contradictory assumptions.",
+    "split": "test",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-14",
+    "prompt": "Compare trade-offs in replicated database failover.",
+    "split": "test",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-15",
+    "prompt": "Debug an intermittent error across asynchronous requests.",
+    "split": "test",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "reason-16",
+    "prompt": "Derive a bound on queue length under bursty arrivals.",
+    "split": "test",
+    "family": "reason",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-00",
+    "prompt": "Review a security design for untrusted uploaded files.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-01",
+    "prompt": "Explain a subtle floating point bug and construct a counterexample.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-02",
+    "prompt": "Plan a migration with zero downtime and a rollback guarantee.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-03",
+    "prompt": "Evaluate an algorithm for worst-case complexity and correctness.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-04",
+    "prompt": "Review a security boundary between tenants in a shared database.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-05",
+    "prompt": "Explain why an apparently valid induction proof is circular.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-06",
+    "prompt": "Plan disaster recovery under a five-minute recovery objective.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-07",
+    "prompt": "Evaluate fairness when one subgroup has missing outcome labels.",
+    "split": "train",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-08",
+    "prompt": "Review a security vulnerability in an authorization middleware.",
+    "split": "dev",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-09",
+    "prompt": "Explain the causal assumptions needed to identify treatment effects.",
+    "split": "dev",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-10",
+    "prompt": "Plan a schema migration while old and new clients coexist.",
+    "split": "dev",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-11",
+    "prompt": "Evaluate a numerical solver near an ill-conditioned matrix.",
+    "split": "test",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-12",
+    "prompt": "Review a security protocol with replay and timing attacks.",
+    "split": "test",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-13",
+    "prompt": "Explain a counterexample to a claimed scheduling guarantee.",
+    "split": "test",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-14",
+    "prompt": "Plan backpressure when consumers fail and queues grow.",
+    "split": "test",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-15",
+    "prompt": "Evaluate a proof that mixes necessary and sufficient conditions.",
+    "split": "test",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "constraints-16",
+    "prompt": "Review a security policy for a document retrieval assistant.",
+    "split": "test",
+    "family": "constraints",
+    "needs_large": true
+  },
+  {
+    "id": "shift-00",
+    "prompt": "Prove it.",
+    "split": "test",
+    "family": "shift",
+    "needs_large": true
+  },
+  {
+    "id": "shift-01",
+    "prompt": "Is this lock safe when two threads acquire it in opposite orders?",
+    "split": "test",
+    "family": "shift",
+    "needs_large": true
+  },
+  {
+    "id": "shift-02",
+    "prompt": "What assumption makes this conclusion fail if the events are dependent?",
+    "split": "test",
+    "family": "shift",
+    "needs_large": true
+  },
+  {
+    "id": "shift-03",
+    "prompt": "Why does a replica acknowledge a write that disappears after failover?",
+    "split": "test",
+    "family": "shift",
+    "needs_large": true
+  },
+  {
+    "id": "shift-04",
+    "prompt": "Rewrite this exact sentence politely: Please review the security design when you have time.",
+    "split": "test",
+    "family": "shift",
+    "needs_large": false
+  },
+  {
+    "id": "shift-05",
+    "prompt": "Extract the email from this long note. We discussed planning, retries, complex systems, proofs, algorithms, concurrency, and many other topics during the workshop. The only requested field is the contact address: sam@example.org.",
+    "split": "test",
+    "family": "shift",
+    "needs_large": false
+  },
+  {
+    "id": "shift-06",
+    "prompt": "Translate the word prove into French.",
+    "split": "test",
+    "family": "shift",
+    "needs_large": false
+  },
+  {
+    "id": "shift-07",
+    "prompt": "Classify the sentiment of: Debugging this race condition was fun!",
+    "split": "test",
+    "family": "shift",
+    "needs_large": false
+  },
+  {
+    "id": "shift-08",
+    "prompt": "A bat and ball cost 1.10 dollars. The bat costs one dollar more. What is the ball price?",
+    "split": "test",
+    "family": "shift",
+    "needs_large": true
+  },
+  {
+    "id": "shift-09",
+    "prompt": "Return just the first item from this list: analyze, review, derive.",
+    "split": "test",
+    "family": "shift",
+    "needs_large": false
+  },
+  {
+    "id": "shift-10",
+    "prompt": "Sort the words apple pear banana alphabetically.",
+    "split": "test",
+    "family": "shift",
+    "needs_large": false
+  },
+  {
+    "id": "shift-11",
+    "prompt": "Two processes both read a counter before incrementing it. Can an update vanish?",
+    "split": "test",
+    "family": "shift",
+    "needs_large": true
+  }
+]
